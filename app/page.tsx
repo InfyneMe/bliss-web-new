@@ -1,13 +1,30 @@
 'use client'
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect,useState } from "react"
 import { ChevronRight, ShoppingCart, Star, Truck, Clock, Shield } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+import clsx from 'clsx';
+
+const backgroundImages = [
+  "/hero-image9.jpg",
+  "/hero-image8.jpg",
+  "/hero-image6.jpg",
+];
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % backgroundImages.length);
+    }, 5000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleShopNowClick = () => {
     setIsModalOpen(true);
@@ -57,29 +74,36 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative">
+        <section className="relative h-[500px] overflow-hidden">
+          {/* <div className="absolute inset-0 -z-10 bg-[url('/header-image5.jpg?height=1080&width=1920')] bg-cover bg-center bg-no-repeat" /> */}
+          {backgroundImages.map((img, index) => (
+            <div
+              key={index}
+              className={clsx(
+                "absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 -z-20",
+                {
+                  "opacity-100": index === currentImage,
+                  "opacity-0": index !== currentImage,
+                }
+              )}
+              style={{ backgroundImage: `url('${img}')` }}
+            />
+          ))}
+          <div className="absolute inset-0 -z-10 bg-black/50" /> {/* Dark overlay for better text readability */}
           <div className="container flex flex-col items-center justify-center space-y-4 py-24 text-center md:py-32">
-            <div className="absolute inset-0 -z-10 bg-gradient-to-b from-green-50 to-white" />
-            {/* <Image
-              src="/logo2.png"
-              alt="Bliss Logo"
-              width={400}
-              height={200}
-              className="rounded-md"
-            /> */}
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              Fresh & Natural <span className="text-green-600">Groceries</span>
+            <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl">
+              Fresh & Natural <span className="text-green-300">Groceries</span>
             </h1>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
+            <p className="max-w-[700px] text-white md:text-xl">
               Premium quality drinking water, noodles, pasta, and vermicelli delivered to your doorstep.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700" onClick={handleShopNowClick}>
+              <Button size="lg" className="bg-green-600 hover:bg-green-700">
                 Shop Now
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
               <Link href="/explore">
-                <Button size="lg" variant="outline">
+                <Button size="lg" variant="outline" className="bg-white/10 text-white hover:bg-white/20 border-white">
                   Explore Bliss
                 </Button>
               </Link>
@@ -169,11 +193,11 @@ export default function Home() {
                 </div>
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">Bliss Mineral Water</h3>
-                  <p className="text-sm text-muted-foreground">Pure and refreshing natural mineral water</p>
+                  <p className="text-sm text-muted-foreground h-12 overflow-hidden">Pure and refreshing natural mineral water</p>
                   <div className="mt-2 flex items-center justify-between">
-                    <span className="font-medium">Rs -1.99</span>
-                    <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                      Add to Cart
+                    {/* <span className="font-medium">Rs -1.99</span> */}
+                    <Button size="sm" className="bg-green-600 hover:bg-green-700 w-80">
+                      View Details
                     </Button>
                   </div>
                 </div>
@@ -192,11 +216,11 @@ export default function Home() {
                 </div>
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">Bliss Instant Noodles</h3>
-                  <p className="text-sm text-muted-foreground">Ready in 3 minutes, perfect for quick meals</p>
+                  <p className="text-sm text-muted-foreground h-12 overflow-hidden">Ready in 3 minutes, perfect for quick meals</p>
                   <div className="mt-2 flex items-center justify-between">
-                    <span className="font-medium">Rs -2.49</span>
-                    <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                      Add to Cart
+                  {/* <span className="font-medium">₹30</span> */}
+                    <Button size="sm" className="bg-green-600 hover:bg-green-700 w-80">
+                      View Details
                     </Button>
                   </div>
                 </div>
@@ -215,11 +239,11 @@ export default function Home() {
                 </div>
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">Bliss Premium Pasta</h3>
-                  <p className="text-sm text-muted-foreground">Made with durum wheat semolina</p>
+                  <p className="text-sm text-muted-foreground h-12 overflow-hidden">Made with durum wheat semolina</p>
                   <div className="mt-2 flex items-center justify-between">
-                    <span className="font-medium">Rs -3.29</span>
-                    <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                      Add to Cart
+                    {/* <span className="font-medium">₹50</span> */}
+                    <Button size="sm" className="bg-green-600 hover:bg-green-700 w-80">
+                      View Details
                     </Button>
                   </div>
                 </div>
@@ -238,11 +262,11 @@ export default function Home() {
                 </div>
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">Bliss Vermicelli</h3>
-                  <p className="text-sm text-muted-foreground">Thin, versatile pasta for soups and desserts</p>
+                  <p className="text-sm text-muted-foreground h-12 overflow-hidden">Thin, versatile pasta for soups and desserts</p>
                   <div className="mt-2 flex items-center justify-between">
-                    <span className="font-medium">Rs -2.79</span>
-                    <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                      Add to Cart
+                    {/* <span className="font-medium">₹20</span> */}
+                    <Button size="sm" className="bg-green-600 hover:bg-green-700 w-80">
+                      View More
                     </Button>
                   </div>
                 </div>
