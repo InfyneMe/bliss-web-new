@@ -98,7 +98,7 @@ export default function Home() {
               Premium quality drinking water, noodles, pasta, and vermicelli delivered to your doorstep.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <Button size="lg" className="bg-green-600 hover:bg-green-700" onClick={handleShopNowClick}>
                 Shop Now
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
