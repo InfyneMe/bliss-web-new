@@ -171,7 +171,7 @@ export default function Home() {
                   <h3 className="text-lg font-semibold">Bliss Mineral Water</h3>
                   <p className="text-sm text-muted-foreground">Pure and refreshing natural mineral water</p>
                   <div className="mt-2 flex items-center justify-between">
-                    <span className="font-medium">$1.99</span>
+                    <span className="font-medium">Rs -1.99</span>
                     <Button size="sm" className="bg-green-600 hover:bg-green-700">
                       Add to Cart
                     </Button>
@@ -194,7 +194,7 @@ export default function Home() {
                   <h3 className="text-lg font-semibold">Bliss Instant Noodles</h3>
                   <p className="text-sm text-muted-foreground">Ready in 3 minutes, perfect for quick meals</p>
                   <div className="mt-2 flex items-center justify-between">
-                    <span className="font-medium">$2.49</span>
+                    <span className="font-medium">Rs -2.49</span>
                     <Button size="sm" className="bg-green-600 hover:bg-green-700">
                       Add to Cart
                     </Button>
@@ -217,7 +217,7 @@ export default function Home() {
                   <h3 className="text-lg font-semibold">Bliss Premium Pasta</h3>
                   <p className="text-sm text-muted-foreground">Made with durum wheat semolina</p>
                   <div className="mt-2 flex items-center justify-between">
-                    <span className="font-medium">$3.29</span>
+                    <span className="font-medium">Rs -3.29</span>
                     <Button size="sm" className="bg-green-600 hover:bg-green-700">
                       Add to Cart
                     </Button>
@@ -240,7 +240,7 @@ export default function Home() {
                   <h3 className="text-lg font-semibold">Bliss Vermicelli</h3>
                   <p className="text-sm text-muted-foreground">Thin, versatile pasta for soups and desserts</p>
                   <div className="mt-2 flex items-center justify-between">
-                    <span className="font-medium">$2.79</span>
+                    <span className="font-medium">Rs -2.79</span>
                     <Button size="sm" className="bg-green-600 hover:bg-green-700">
                       Add to Cart
                     </Button>
