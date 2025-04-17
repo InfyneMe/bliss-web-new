@@ -116,9 +116,9 @@ export default function ExplorePage() {
                           <CardDescription>500ml bottle</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -1.49</p>
+                          {/* <p className="font-medium">Rs -1.49</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -136,9 +136,9 @@ export default function ExplorePage() {
                           <CardDescription>1L bottle</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -2.29</p>
+                          {/* <p className="font-medium">Rs -2.29</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -156,9 +156,9 @@ export default function ExplorePage() {
                           <CardDescription>750ml bottle</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -1.99</p>
+                          {/* <p className="font-medium">Rs -1.99</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -177,9 +177,9 @@ export default function ExplorePage() {
                           <CardDescription>1L bottle</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -2.99</p>
+                          {/* <p className="font-medium">Rs -2.99</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -209,9 +209,9 @@ export default function ExplorePage() {
                           <CardDescription>Pack of 5</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -3.49</p>
+                          {/* <p className="font-medium">Rs -3.49</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -230,9 +230,9 @@ export default function ExplorePage() {
                           <CardDescription>Pack of 5</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -3.49</p>
+                          {/* <p className="font-medium">Rs -3.49</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -250,9 +250,9 @@ export default function ExplorePage() {
                           <CardDescription>400g pack</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -2.99</p>
+                          {/* <p className="font-medium">Rs -2.99</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -270,9 +270,9 @@ export default function ExplorePage() {
                           <CardDescription>350g pack</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -3.29</p>
+                          {/* <p className="font-medium">Rs -3.29</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -302,9 +302,9 @@ export default function ExplorePage() {
                           <CardDescription>500g pack</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -2.49</p>
+                          {/* <p className="font-medium">Rs -2.49</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -322,9 +322,9 @@ export default function ExplorePage() {
                           <CardDescription>500g pack</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -2.49</p>
+                          {/* <p className="font-medium">Rs -2.49</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -342,9 +342,9 @@ export default function ExplorePage() {
                           <CardDescription>500g pack</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -2.49</p>
+                          {/* <p className="font-medium">Rs -2.49</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -363,9 +363,9 @@ export default function ExplorePage() {
                           <CardDescription>450g pack</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -3.29</p>
+                          {/* <p className="font-medium">Rs -3.29</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -395,9 +395,9 @@ export default function ExplorePage() {
                           <CardDescription>300g pack</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -2.79</p>
+                          {/* <p className="font-medium">Rs -2.79</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -415,9 +415,9 @@ export default function ExplorePage() {
                           <CardDescription>300g pack</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -2.49</p>
+                          {/* <p className="font-medium">Rs -2.49</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -436,9 +436,9 @@ export default function ExplorePage() {
                           <CardDescription>250g pack</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -2.99</p>
+                          {/* <p className="font-medium">Rs -2.99</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
@@ -456,9 +456,9 @@ export default function ExplorePage() {
                           <CardDescription>Cup - 70g</CardDescription>
                         </CardHeader>
                         <CardFooter className="flex justify-between p-4 pt-0">
-                          <p className="font-medium">Rs -1.49</p>
+                          {/* <p className="font-medium">Rs -1.49</p> */}
                           <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                            Add to Cart
+                            View Details
                           </Button>
                         </CardFooter>
                       </Card>
