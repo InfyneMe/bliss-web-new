@@ -40,7 +40,7 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
-              src="/logo1.png"
+              src="/bliss_logo_1.svg"
               alt="Bliss Logo"
               width={80}
               height={80}
@@ -442,7 +442,7 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2">
                 <Image
-                  src="/logo1.png"
+                  src="/bliss_logo_1.svg"
                   alt="Bliss Logo"
                   width={100}
                   height={100}
